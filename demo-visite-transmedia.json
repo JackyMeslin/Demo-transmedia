@@ -144,6 +144,19 @@ PanoramaStudioViewerParams = {
 	            "bitmapscale": "1.0;1.1",
 	            "bitmaptype": "floating",
 	            "href": "javascript:",
+                    "hsinfo": {
+	                "align": "center",
+	                "captureMouse": true,
+	                "checkHover": true,
+	                "id": "hsinfo3",
+	                "maxwidth": "66%",
+	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
+	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><img src=\"plan aérien.mp4\" alt=\"plan aérien\" width=\"400\">\n<p>Plan du site (vidéo aérienne)</p></div>",
+	                "xoff": 0,
+	                "yoff": -30
+	            },
+	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
 	            "opacity": "1.00;1.00",
 	            "position": "143.4375,54.2285",
 	            "textbox": {
