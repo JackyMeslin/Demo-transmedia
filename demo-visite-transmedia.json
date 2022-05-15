@@ -170,7 +170,6 @@ PanoramaStudioViewerParams = {
 	            "bitmap": "drone-icon.png",
 	            "bitmapscale": "1.0;1.1",
 	            "bitmaptype": "floating",
-	            "href": "",
 	            "href": "javascript:",
 	            "hsinfo": {
 	                "align": "center",
