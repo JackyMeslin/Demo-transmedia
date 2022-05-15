@@ -152,7 +152,7 @@ PanoramaStudioViewerParams = {
 	                "maxwidth": "66%",
 	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
 	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
-	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><video controls width=\"250\">\n    <source src=\"plan aérien.mp4\" type=\"video/mp4\" width=\"80%\">\nDésolé votre navigateur ne peut lire le fichier média</video>\n<p>Plan du site (vidéo aérienne)</p></div>",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><video controls width=\"250\">\n    <source src=\"plan aérien.mp4\" type=\"video/mp4\" width=\"auto\">\nDésolé votre navigateur ne peut lire le fichier média</video>\n<p>Plan du site (vidéo aérienne)</p></div>",
 	                "xoff": 0,
 	                "yoff": -30
 	            },
