@@ -11,14 +11,6 @@ PanoramaStudioViewerParams = {
             "thumbnail": "demo-visite-transmedia_tiles/demo-visite-transmedia_thumb.jpg"
         },
         {
-            "href": "demo-visite-transmedia-version2.json",
-            "location": {
-                "heading": 90
-            },
-            "text": "Alignements du Moulin",
-            "thumbnail": "demo-visite-transmedia-version2_tiles/demo-visite-transmedia-version2_thumb.jpg"
-        },
-        {
             "href": "panorama-2.json",
             "location": {
                 "heading": 0
