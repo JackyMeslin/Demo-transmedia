@@ -98,7 +98,7 @@ PanoramaStudioViewerParams = {
 	                "maxwidth": "66%",
 	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
 	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
-	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><iframe style=\"padding:10px\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iVDAVsqf2K0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><iframe style=\"padding:10px\" width=\"370\" height=\"208\" src=\"https://www.youtube.com/embed/iVDAVsqf2K0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>",
 	                "xoff": 0,
 	                "yoff": -30
 	            },
@@ -125,7 +125,7 @@ PanoramaStudioViewerParams = {
 	                "maxwidth": "66%",
 	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
 	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
-	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><img src=\"Lever de lune.jpg\" alt=\"lever de lune\" width=\"400\">\n<p>Lever de lune- Cliché Néotopia &copy;2022</p></div>",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><img src=\"Lever de lune.jpg\" alt=\"lever de lune\" width=\"300\">\n<p>Lever de lune- Cliché Néotopia &copy;2022</p></div>",
 	                "xoff": 0,
 	                "yoff": -30
 	            },
@@ -152,7 +152,7 @@ PanoramaStudioViewerParams = {
 	                "maxwidth": "88%",
 	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
 	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
-	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><video controls width=\"250\">\n    <source src=\"plan aérien.mp4\" type=\"video/mp4\" width=\"1000px\">\nDésolé votre navigateur ne peut lire le fichier média</video>\n<p>Plan du site (vidéo aérienne)</p></div>",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><video controls width=\"250\">\n    <source src=\"plan aérien.mp4\" type=\"video/mp4\" width=\"370px\">\nDésolé votre navigateur ne peut lire le fichier média</video>\n<p>Plan du site (vidéo aérienne)</p></div>",
 	                "xoff": 0,
 	                "yoff": -30
 	            },
@@ -179,7 +179,7 @@ PanoramaStudioViewerParams = {
 	                "maxwidth": "88%",
 	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
 	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
-	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style></style><video controls width=\"250\">\n <source src=\"Saint-Just-Alignements-du-Moulin.mp4\" type=\"video/mp4\" alt=\"vue aérienne des alignements\" width=\"1000px\">\n</video><p>vue aérienne des alignements</p></div>",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style></style><video controls width=\"250\">\n <source src=\"Saint-Just-Alignements-du-Moulin.mp4\" type=\"video/mp4\" alt=\"vue aérienne des alignements\" width=\"370px\">\n</video><p>vue aérienne des alignements</p></div>",
 	                "xoff": 0,
 	                "yoff": -30
 	            },
@@ -207,7 +207,7 @@ PanoramaStudioViewerParams = {
 	                "maxwidth": "66%",
 	                "onclick": "function(){ this.viewer.action('hideMessage'); } ",
 	                "style": "min-width: 25%; text-shadow: none; line-height: 100%; color:#ffffff; font-family: Arial,Helvetica,Sans-Serif; font-size: 15px; font-weight: 100; text-align:left; box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.33);background: rgba(0,0,0,0.66); transform-origin : 0% 0% 0px; transform: translate(0px, 0px) translateZ(10000px);",
-	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vyBTPE12kfs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>",
+	                "text": "<div style='padding: 16px;' class='panoStudioViewerText1'><style>div.panoStudioViewerText1 a, a:visited {color: #FDB815;} div.panoStudioViewerText1 a:hover, a:active {color: #EFF517;}</style><iframe width=\"370\" height=\"208\" src=\"https://www.youtube.com/embed/vyBTPE12kfs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>",
 	                "xoff": 0,
 	                "yoff": -30
 	            },
