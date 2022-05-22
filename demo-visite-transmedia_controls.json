@@ -170,7 +170,7 @@ PanoramaStudioViewerParams = {
                     "id": "infobutton",
                     "index": 5,
                     "onclick": "function(){ var d=this.viewer.get('localData'); d&&(d=d.infoTextBox); if(!d){ var d=this.viewer.get('globalData'); d&&(d=d.infoTextBox); } if (!!d){this.viewer.action('toggleMessage',d);} }",
-                    "onscenechanged": "function(){ var d=this.viewer.get('localData'); var g=this.viewer.get('globalData'); var o=d&&d.infoTextBox||g&&g.infoTextBox; this.setVisible(!!o); if (!!o){ if (d&&d.infoTextBox) this.viewer.action('hideMessage'); this.viewer.action('showMessage',o); } }",
+                    "onscenechanged": "function(){ var d=this.viewer.get('localData'); var g=this.viewer.get('globalData'); var o=d&&d.infoTextBox||g&&g.infoTextBox; this.setVisible(!!o); if (!!o){ if (d&&d.infoTextBox) this.viewer.action('hideMessage'); this.viewer.action('showMessage',o); } }",       
                     "priority": 3,
                     "skin": "shadow(3,0,0,rgba(0,0,0,1));copy(defaultSkin,0,0,64,64,0,0,28,28);",
                     "xoff": 0,
