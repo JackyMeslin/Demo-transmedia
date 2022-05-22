@@ -14,6 +14,18 @@ PanoramaStudioViewerParams = {
             "id": "hideGallery"
         },
         {
+            "func": "function(a){ var d = this.viewer.get('map'); if (d&&!d.collapsing){ d.collapsing = !0;  if (!d.visible){   d.viewer.action('hideGallery'); d.setVisible(true); d.style = 'opacity: 1.0;'; d.updateStyles();   var o = d.viewer.get('thumbnailGallery');   if (!!o&&o.align == d.align){ d.height = o.height; d.updateSize(); }   var dh = Math.min(Math.max(this.viewer.height()*0.6, 96), this.viewer.height() - 96);   d.tween({ 'time': 0.3, 'transition' : 'easeInOutSine', 'height' : dh, 'onUpdate' : function(a){ a.updateSize(); }, 'onComplete' : function(a){ a.collapsing = !1; a.height = dh; a.updateSize(); a.center(); } }); } else { d.style = 'opacity: 0.0;'; d.updateStyles(); d.tween({ 'time': 0.3, 'transition' : 'easeInOutSine', 'height' : 0, 'onUpdate' : function(a){ a.updateSize(); }, 'onComplete' : function(a){ a.collapsing = !1; a.height = 0; a.updateSize(); a.setVisible(false); } }); }}}",
+            "id": "toggleMap"
+        },
+        {
+            "func": "function(delay){ var d=this.viewer.get('map'); if (d&&d.visible&&!d.collapsing){  d.collapsing = !0; d.updateStyles();  d.tween({'time': 0.5, 'delay': delay, 'transition': 'easeInOutSine', 'height': 0, 'onUpdate': function(a){ a.updateSize();  },'onComplete': function(a){ a.collapsing = !1; a.height = 0; a.updateSize(); a.setVisible(false); }});}}",
+            "id": "hideMap"
+        },
+        {
+            "func": "function(){ var map = this.get('map'); if (map && map.visible){  var h = Math.min(Math.max(this.viewer.height()*0.6, 96),this.viewer.height()-96);  map.height = h; map.updateSize();}}",
+            "id": "resizeMap"
+        },
+        {
             "func": "function(c){  c.translate(c.canvas.width/2.0,c.canvas.height/2.0); c.rotate(Math.PI); c.translate(-c.canvas.width/2.0,-c.canvas.height/2.0); }",
             "id": "rotateCanvas"
         },
@@ -142,11 +154,23 @@ PanoramaStudioViewerParams = {
                     "yoff": 0
                 },
                 {
+                    "align": "left",
+                    "id": "mapbutton",
+                    "index": 3,
+                    "onclick": "function(){ this.viewer.action('toggleMap'); }",
+                    "oninit": "function(){var m = this.viewer.map(); if (!!m){ this.setVisible(true);}}",
+                    "priority": 3,
+                    "skin": "shadow(3,0,0,rgba(0,0,0,1));copy(defaultSkin,128,448,64,64,0,0,28,28);",
+                    "visible": false,
+                    "xoff": 8,
+                    "yoff": 0
+                },
+                {
                     "align": "center",
                     "id": "infobutton",
                     "index": 5,
                     "onclick": "function(){ var d=this.viewer.get('localData'); d&&(d=d.infoTextBox); if(!d){ var d=this.viewer.get('globalData'); d&&(d=d.infoTextBox); } if (!!d){this.viewer.action('toggleMessage',d);} }",
-                    "onscenechanged": "function(){ var d=this.viewer.get('localData'); var g=this.viewer.get('globalData'); var o=d&&d.infoTextBox||g&&g.infoTextBox; this.setVisible(!!o); }",
+                    "onscenechanged": "function(){ var d=this.viewer.get('localData'); var g=this.viewer.get('globalData'); var o=d&&d.infoTextBox||g&&g.infoTextBox; this.setVisible(!!o); if (!!o){ if (d&&d.infoTextBox) this.viewer.action('hideMessage'); this.viewer.action('showMessage',o); } }",
                     "priority": 3,
                     "skin": "shadow(3,0,0,rgba(0,0,0,1));copy(defaultSkin,0,0,64,64,0,0,28,28);",
                     "xoff": 0,
@@ -296,6 +320,28 @@ PanoramaStudioViewerParams = {
             "height": "48px",
             "hidestyle": "",
             "id": "toolbar",
+            "mapElement": {
+                "align": "lefttop",
+                "apikey": "AIzaSyACOBaukxViIkM0lYhFAsyj6VVFagNADCs",
+                "contentstyle": "position: absolute; left: 4px; right: 4px; bottom: 4px; top: 4px; display: inline; overflow: hidden;",
+                "gmapstype": "hybrid",
+                "gmarker": "{ url: 'pap_marker_redorange.png', scaledSize: new google.maps.Size(30,48), anchor: new google.maps.Point(15, 42) }",
+                "gmarkeractive": "{ url: 'pap_marker_lima.png', scaledSize: new google.maps.Size(30,48), anchor: new google.maps.Point(15, 42) }",
+                "height": "0px",
+                "id": "map",
+                "onmarkerclick": "function(){ this.viewer.action('hideMap',0.3); }",
+                "radar": {
+                    "radarcontext": "function(c){ c.lineWidth = 1; if (!this.fillStyle){ var w = c.canvas.width/2; this.fillStyle=c.createRadialGradient(w,w,0,w,w,w); this.fillStyle.addColorStop(0,'rgba(255,255,255,0.5)');this.fillStyle.addColorStop(1,'rgba(255,255,255,0.1)');} c.fillStyle = this.fillStyle; if (!this.strokeStyle){ var w = c.canvas.width/2; this.strokeStyle=c.createRadialGradient(w,w,0,w,w,w); this.strokeStyle.addColorStop(0,'#ccc');this.strokeStyle.addColorStop(1,'rgba(192,192,192,0.7)');} c.strokeStyle = this.strokeStyle;  }",
+                    "radius": 0.99,
+                    "width": 256
+                },
+                "style": "opacity: 0; transition: opacity 0.5s",
+                "type": "gmap",
+                "typecontrols": true,
+                "visible": false,
+                "zoom": 18,
+                "zoomcontrols": true
+            },
             "spacing": 8,
             "style": "max-width: 100%;transform-origin: 50% 0px; transform: translate(0px,0px) translateZ(10000px) perspective( 800px ) rotateX( 0deg ); background: rgba(0,0,0,0.5); transition: transform 500ms;",
             "visible": true,
