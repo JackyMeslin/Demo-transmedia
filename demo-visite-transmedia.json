@@ -131,7 +131,7 @@ PanoramaStudioViewerParams = {
 	            },
 	            "onclick": "function(){ this.viewer.action('toggleMessage',this.hsinfo); }",
 	            "opacity": "1.00;1.00",
-	            "position": "176.3965,-0.3516",
+	            "position": "127.8369,-7.8223",
 	            "textbox": {
 	                "align": "top",
 	                "style": "color:#ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-align:center; display: inline;",
