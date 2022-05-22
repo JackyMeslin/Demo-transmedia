@@ -263,7 +263,7 @@ PanoramaStudioViewerParams = {
 	                "text": "Podcast sur le Néolithique"
 	            },
 	            "unit": "deg"
-	        }
+	        },
 		{
 	            "bitmap": "icon-museum.png",
 	            "bitmapscale": "1.0;1.1",
