@@ -5,7 +5,10 @@ PanoramaStudioViewerParams = {
         {
             "href": "demo-visite-transmedia.json",
             "location": {
-                "heading": 90
+                "alt": 81,
+                "heading": 90,
+                "lat": 47.76485567,
+                "lon": -1.973841138888889
             },
             "text": "Alignements du Moulin",
             "thumbnail": "demo-visite-transmedia_tiles/demo-visite-transmedia_thumb.jpg"
@@ -13,7 +16,10 @@ PanoramaStudioViewerParams = {
         {
             "href": "panorama-2.json",
             "location": {
-                "heading": 0
+                "alt": 81,
+                "heading": 0,
+                "lat": 47.76485567,
+                "lon": -1.973841138888889
             },
             "text": "Suite de la visite",
             "thumbnail": "panorama-2_tiles/panorama-2_thumb.jpg"
