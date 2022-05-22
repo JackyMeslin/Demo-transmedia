@@ -18,8 +18,8 @@ PanoramaStudioViewerParams = {
             "location": {
                 "alt": 81,
                 "heading": 0,
-                "lat": 47.76485567,
-                "lon": -1.973841138888889
+                "lat": 47.76463815827112,
+                "lon": -1.9756981164078646
             },
             "text": "Suite de la visite",
             "thumbnail": "panorama-2_tiles/panorama-2_thumb.jpg"
